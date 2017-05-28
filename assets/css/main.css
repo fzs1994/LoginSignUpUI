@@ -9,3 +9,11 @@
 .heart{
 	color: #FF3B30;
 }
+
+.wrapper > .header{
+	min-height: 150px;
+}
+
+.index-page .wrapper > .header{
+	height: 1vh;
+}
