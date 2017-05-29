@@ -165,20 +165,20 @@
 											<span class="nav-tabs-title">New Feedback Details:</span>
 											<ul class="nav nav-tabs" data-tabs="tabs">
 												<li class="active">
-													<a href="#profile" data-toggle="tab" id="messages-tab">
-														<i class="material-icons">bug_report</i>
+													<a href="#general" data-toggle="tab" id="general-tab">
+														<i class="material-icons">description</i>
 														General
 													<div class="ripple-container"></div></a>
 												</li>
 												<li class="">
-													<a href="#messages" data-toggle="tab" id="settings-tab">
+													<a href="#form" data-toggle="tab" id="form-tab">
 														<i class="material-icons">code</i>
-														Feedback Inputs
+														Feedback Form
 													<div class="ripple-container"></div></a>
 												</li>
 												<li class="">
-													<a href="#settings" data-toggle="tab" id="final-tab">
-														<i class="material-icons">cloud</i>
+													<a href="#final" data-toggle="tab" id="final-tab">
+														<i class="material-icons">done_all</i>
 														Finalization
 													<div class="ripple-container"></div></a>
 												</li>
@@ -186,21 +186,56 @@
 										</div>
 									</div>
 								</div>
+								<form method="" action="" class="">
+									<div class="card-content">
+										<div class="tab-content">
+											<div class="tab-pane active" id="general">
+												<div>
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="material-icons">chat</i>
+														</span>
+														<div class="form-group label-floating">
+				                                          <label class="control-label">Feedback Name <small>(required)</small></label>
+				                                          <input name="feedbackName" type="text" class="form-control">
+				                                        </div>
+													</div>
 
-								<div class="card-content">
-									<div class="tab-content">
-										<div class="tab-pane active" id="profile">
-											General Feedback Detals
-											<a id="next-messages" class="btn btn-primary">Next</a>
-										</div>
-										<div class="tab-pane" id="messages">
-											Feedback Form Builder
-										</div>
-										<div class="tab-pane" id="settings">
-											Final Steps and Publish
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="material-icons">question_answer</i>
+														</span>
+														<div class="form-group label-floating">
+				                                          <label class="control-label">Feedback Type <small>(required)</small></label>
+				                                          <input name="firstname" type="text" class="form-control">
+				                                        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<a href="#" id="next-form" class="btn btn-primary pull-right">Next</a>	
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="form">
+												<div class="row">
+													<div class="col-md-12">
+														<a href="#" id="prev-general" class="btn btn-default pull-left">Previous</a>
+														<a href="#" id="next-final" class="btn btn-primary pull-right">Next</a>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="final">
+												<div class="row">
+													<div class="col-md-12">
+														<a href="#" id="prev-form" class="btn btn-default pull-left">Previous</a>
+														<button type="submit" id="submit" class="btn btn-primary pull-right">Submit</button>		
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
+								</form>
 
 							</div>
 						</div>
@@ -264,19 +299,22 @@
 
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
+	
 	<script type="text/javascript">
-    	$(document).ready(function(){
-
-			// Javascript method's body can be found in assets/js/demos.js
-        	// demo.initDashboardPageCharts();
-
-        	
-
+    	$('#next-form').click(function(){
+    		$('#form-tab').trigger('click');
     	});
 
-    	$('#next-messages').click(function(){
-    		$('#settings-tab').trigger('click');
+    	$('#next-final').click(function(){
+    		$('#final-tab').trigger('click');
+    	});
+
+    	$('#prev-general').click(function(){
+    		$('#general-tab').trigger('click');
+    	});
+
+    	$('#prev-form').click(function(){
+    		$('#form-tab').trigger('click');
     	});
 	</script>
 
