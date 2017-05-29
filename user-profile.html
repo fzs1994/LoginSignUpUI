@@ -2,279 +2,218 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Sign Up | Feedback System</title>
+	<title>Material Dashboard by Creative Tim</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-	<!-- CSS Files -->
+    <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+    <!--  Material Dashboard CSS    -->
+    <link href="assets/css/material-dashboard.css" rel="stylesheet"/>
 
     <!-- CSS Files -->
 	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
-<body class="signup-page">
-	<nav class="navbar navbar-transparent navbar-absolute">
-    	<div class="container">
-        	<!-- Brand and toggle get grouped for better mobile display -->
-        	<div class="navbar-header">
-        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-            		<span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-        		</button>
-        		<a class="navbar-brand" href="index.html"><span style="font-weight: 700;">Feedback</span>System</a>
-        	</div>
+<body>
 
-        	<div class="collapse navbar-collapse" id="navigation-example">
-        		<ul class="nav navbar-nav navbar-right">
-					<li>
-    					<a href="index.html">
-    						Home
-    					</a>
-    				</li>
-					<li>
-    					<a href="login-page.html">
-    						Login
-    					</a>
-    				</li>
-    				<!-- <li>
-						<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
-							<i class="material-icons">unarchive</i> Upgrade to PRO
-						</a>
-    				</li> -->
-		            <li>
-		                <a href="#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-twitter"></i>
-						</a>
-		            </li>
-		            <li>
-		                <a href="#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-					<li>
-		                <a href="#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-instagram"></i>
-						</a>
-		            </li>
-        		</ul>
-        	</div>
-    	</div>
-    </nav>
+	<div class="wrapper">
+	    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-1.jpg">
+			<!--
+		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
-    <!-- <div class="wrapper">
-		<div class="header header-filter" style="background-image: url('assets/img/city.jpg'); background-size: cover; background-position: top center;"> -->
-			<!-- <div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-						<div class="card card-signup">
-							<form class="form" method="" action="">
-								<div class="header header-primary text-center">
-									<h4>Sign Up</h4>
-									<div class="social-line">
-										<a href="#" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-facebook-square"></i>
-										</a>
-										<a href="#" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a href="#" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-google-plus"></i>
-										</a>
-									</div>
-								</div>
-								<p class="text-divider">Or Be Classical</p>
-								<div class="content">
+		        Tip 2: you can also add an image using data-image tag
+		    -->
 
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">face</i>
-										</span>
-										<input type="text" class="form-control" placeholder="First Name...">
-									</div>
+			<div class="logo">
+				<a href="#" class="simple-text">
+					Feedback System
+				</a>
+			</div>
 
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">face</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Last Name...">
-									</div>
+	    	<div class="sidebar-wrapper">
+	            <ul class="nav">
+	                <li>
+	                    <a href="dashboard.html">
+	                        <i class="material-icons">dashboard</i>
+	                        <p>Dashboard</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="new-feedback.html">
+	                        <i class="material-icons">create_new_folder</i>
+	                        <p>New Feedback</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="my-feedbacks.html">
+	                        <i class="material-icons">chat</i>
+	                        <p>My Feedbacks</p>
+	                    </a>
+	                </li>
+	            </ul>
+	    	</div>
+	    </div>
 
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">label_outline</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Username...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">email</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Email...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">lock_outline</i>
-										</span>
-										<input type="password" placeholder="Password..." class="form-control" />
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">lock_outline</i>
-										</span>
-										<input type="password" placeholder="Confirm Password..." class="form-control" />
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">event_note</i>
-										</span>
-										<input class="datepicker form-control" type="text" value="DD/MM/YYYY"/>
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">wc</i>
-										</span>
-										<div class="radio">
-											<label>
-												<input type="radio" name="gender" checked="true">
-												Male
-											</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="gender">
-												Female
-											</label>
-										</div>
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">work</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Company...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">home</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Address Line 1...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">home</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Address Line 2...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">location_on</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Country...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">location_searching</i>
-										</span>
-										<input type="text" class="form-control" placeholder="State...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">my_location</i>
-										</span>
-										<input type="text" class="form-control" placeholder="City...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">local_post_office</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Zip code...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">add_a_photo</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Profile Pic..." id="upload_pic" readonly>
-										<input type="file" style="display: none;" id="profile_pic">
-									</div>
-								</div>
-								<div class="footer text-center">
-									<a href="#pablo" class="btn btn-primary btn-lg">Get Started</a>
-								</div>
-							</form>
-						</div>
+	    <div class="main-panel">
+			<nav class="navbar navbar-transparent navbar-absolute">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Profile</a>
 					</div>
-				</div>
-			</div> -->
-
-			<!-- <footer class="footer">
-		        <div class="container">
-		            <nav class="pull-left">
-						<ul>
-							<li>
-								<a href="#">
-									About Us
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">notifications</i>
+									<span class="notification">5</span>
+									<p class="hidden-lg hidden-md">Notifications</p>
 								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Mike John responded to your email</a></li>
+									<li><a href="#">You have 5 new tasks</a></li>
+									<li><a href="#">You're now friend with Andrew</a></li>
+									<li><a href="#">Another Notification</a></li>
+									<li><a href="#">Another One</a></li>
+								</ul>
 							</li>
 							<li>
-								<a href="#">
-								   Contact Us
-								</a>
+								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+	 							   <i class="material-icons">person</i>
+	 							   <p class="hidden-lg hidden-md">Profile</p>
+	 						    </a>
+	 						    <ul class="dropdown-menu">
+									<li><a href="user-profile.html"><i class="material-icons drop-links">face</i> <span>My Profile</span></a></li>
+									<li><a href="login-page.html"><i class="material-icons drop-links">power_settings_new</i> <span>Logout</span></a></li>
+								</ul>
 							</li>
 						</ul>
-		            </nav>
-		            <div class="copyright pull-right">
-		                &copy; 2017, made with <i class="fa fa-heart heart"></i> by <a href="#" target="_blank">Office Beacon</a>
-		            </div>
-		        </div>
-		    </footer> -->
 
-		<!-- </div>
+					</div>
+				</div>
+			</nav>
 
-    </div> -->
+	        <div class="content">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-md-8">
+	                        <!-- <div class="card">
+	                            <div class="card-header" data-background-color="purple">
+	                                <h4 class="title">Edit Profile</h4>
+									<p class="category">Complete your profile</p>
+	                            </div>
+	                            <div class="card-content">
+	                                <form>
+	                                    <div class="row">
+	                                        <div class="col-md-5">
+												<div class="form-group label-floating">
+													<label class="control-label">Company (disabled)</label>
+													<input type="text" class="form-control" disabled>
+												</div>
+	                                        </div>
+	                                        <div class="col-md-3">
+												<div class="form-group label-floating">
+													<label class="control-label">Username</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">Email address</label>
+													<input type="email" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
 
-    <div class="image-container set-full-height" style="background-image: url('assets/img/city.jpg')">
+	                                    <div class="row">
+	                                        <div class="col-md-6">
+												<div class="form-group label-floating">
+													<label class="control-label">Fist Name</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-6">
+												<div class="form-group label-floating">
+													<label class="control-label">Last Name</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
 
-	    <!--   Big container   -->
-	    <div class="container">
-	        <div class="row">
-		        <div class="col-sm-8 col-sm-offset-2">
-		            <!--      Wizard container        -->
-		            <div class="wizard-container">
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Adress</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="row">
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">City</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">Country</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">Postal Code</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+	                                            <div class="form-group">
+	                                                <label>About Me</label>
+													<div class="form-group label-floating">
+									    				<label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
+								    					<textarea class="form-control" rows="5"></textarea>
+		                        					</div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+	                                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+	                                    <div class="clearfix"></div>
+	                                </form>
+	                            </div>
+	                        </div> -->
+	                        <div class="wizard-container" style="padding-top: 0;">
 		                <div class="card wizard-card" data-color="purple" id="wizardProfile">
 		                    <form action="login-page.html" method="post">
 		                <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
 
 		                    	<div class="wizard-header">
 		                        	<h3 class="wizard-title">
-		                        	   Build Your Profile
+		                        	   Edit Your Profile
 		                        	</h3>
 									<h5>This information will let us know more about you.</h5>
 		                    	</div>
@@ -348,7 +287,19 @@
 														<i class="material-icons">lock_open</i>
 													</span>
 													<div class="form-group label-floating">
-			                                            <label class="control-label">Password <small>(required)</small></label>
+			                                            <label class="control-label">Current Password <small>(required)</small></label>
+			                                            <input id="password" name="current_password" type="password" class="form-control">
+			                                        </div>
+												</div>
+		                                	</div>
+
+		                                	<div class="col-sm-10 col-sm-offset-1">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">lock_open</i>
+													</span>
+													<div class="form-group label-floating">
+			                                            <label class="control-label">New Password <small>(required)</small></label>
 			                                            <input id="password" name="password" type="password" class="form-control">
 			                                        </div>
 												</div>
@@ -360,7 +311,7 @@
 														<i class="material-icons">lock_outline</i>
 													</span>
 													<div class="form-group label-floating">
-			                                            <label class="control-label">Confirm Password <small>(must match)</small></label>
+			                                            <label class="control-label">Confirm New Password <small>(must match)</small></label>
 			                                            <input id="cpassword" name="cpassword" type="password" class="form-control">
 			                                        </div>
 												</div>
@@ -729,49 +680,82 @@
 		                    </form>
 		                </div>
 		            </div> <!-- wizard container -->
-		        </div>
-	        </div><!-- end row -->
-	    </div> <!--  big container -->
+	                    </div>
+						<div class="col-md-4">
+    						<div class="card card-profile">
+    							<div class="card-avatar">
+    								<a href="#pablo">
+    									<img class="img" src="assets/img/faces/marc.jpg" />
+    								</a>
+    							</div>
 
-	    <footer class="footer">
-	        <div class="container">
-	            <nav class="pull-left">
-					<ul>
-						<li>
-							<a href="#">
-								About Us
-							</a>
-						</li>
-						<li>
-							<a href="#">
-							   Contact Us
-							</a>
-						</li>
-					</ul>
-	            </nav>
-	            <div class="copyright pull-right">
-	                &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Office Beacon
+    							<div class="content">
+    								<h6 class="category text-gray">CEO / Co-Founder</h6>
+    								<h4 class="card-title">Alec Thompson</h4>
+    								<p class="card-content">
+    									Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+    								</p>
+    								<a href="#pablo" class="btn btn-primary btn-round">Follow</a>
+    							</div>
+    						</div>
+		    			</div>
+	                </div>
 	            </div>
 	        </div>
-	    </footer>
+
+	        <footer class="footer" style="color: #000; text-shadow: none;">
+	            <div class="container-fluid">
+	                <nav class="pull-left">
+	                    <ul>
+	                        <li>
+	                            <a href="#" style="color: #000;"">
+	                                Home
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#" style="color: #000;"">
+	                                Company
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#" style="color: #000;"">
+	                                Portfolio
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#" style="color: #000;"">
+	                               Blog
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <p class="copyright pull-right" style="color: #000; text-shadow: none;">
+	                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Office Beacon
+	                </p>
+	            </div>
+	        </footer>
+	    </div>
 	</div>
 
-
 </body>
+
 	<!--   Core JS Files   -->
-	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/material.min.js"></script>
+	<script src="assets/js/material.min.js" type="text/javascript"></script>
 	<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
 
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
 
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+	<!--  Notifications Plugin    -->
+	<script src="assets/js/bootstrap-notify.js"></script>
 
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+	<!--  Google Maps Plugin    -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!-- Material Dashboard javascript methods -->
+	<script src="assets/js/material-dashboard.js"></script>
 
 	<!--  Plugin for the Wizard -->
 	<script src="assets/js/material-bootstrap-wizard.js"></script>
@@ -779,6 +763,7 @@
     <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
 	<script src="assets/js/jquery.validate.min.js"></script>
 
-	<script src="assets/js/main.js"></script>
+	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
 
 </html>

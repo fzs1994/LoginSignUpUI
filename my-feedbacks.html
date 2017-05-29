@@ -21,9 +21,34 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+
+    <link href="assets/css/main.css" rel="stylesheet"/>
 </head>
 
 <body>
+
+	<!-- Modal Core -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Feedback Details</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<div class="wrapper">
 	    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-1.jpg">
@@ -34,14 +59,14 @@
 			-->
 
 			<div class="logo">
-				<a href="http://www.creative-tim.com" class="simple-text">
-					Creative Tim
+				<a href="#" class="simple-text">
+					Feedback System
 				</a>
 			</div>
 
 
 	    	<div class="sidebar-wrapper">
-				<ul class="nav">
+	            <ul class="nav">
 	                <li>
 	                    <a href="dashboard.html">
 	                        <i class="material-icons">dashboard</i>
@@ -49,47 +74,17 @@
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="user.html">
-	                        <i class="material-icons">person</i>
-	                        <p>User Profile</p>
+	                    <a href="new-feedback.html">
+	                        <i class="material-icons">create_new_folder</i>
+	                        <p>New Feedback</p>
 	                    </a>
 	                </li>
 	                <li class="active">
-	                    <a href="table.html">
-	                        <i class="material-icons">content_paste</i>
-	                        <p>Table List</p>
+	                    <a href="my-feedbacks.html">
+	                        <i class="material-icons">chat</i>
+	                        <p>My Feedbacks</p>
 	                    </a>
 	                </li>
-	                <li>
-	                    <a href="typography.html">
-	                        <i class="material-icons">library_books</i>
-	                        <p>Typography</p>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="icons.html">
-	                        <i class="material-icons">bubble_chart</i>
-	                        <p>Icons</p>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="maps.html">
-	                        <i class="material-icons">location_on</i>
-	                        <p>Maps</p>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="notifications.html">
-	                        <i class="material-icons text-gray">notifications</i>
-	                        <p>Notifications</p>
-	                    </a>
-	                </li>
-					<li class="active-pro">
-                        <a href="upgrade.html">
-	                        <i class="material-icons">unarchive</i>
-	                        <p>Upgrade to PRO</p>
-	                    </a>
-                    </li>
 	            </ul>
 	    	</div>
 		</div>
@@ -104,16 +99,10 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Table List</a>
+						<a class="navbar-brand" href="#">My Feedback List</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">dashboard</i>
-									<p class="hidden-lg hidden-md">Dashboard</p>
-								</a>
-							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="material-icons">notifications</i>
@@ -132,19 +121,14 @@
 								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
 	 							   <i class="material-icons">person</i>
 	 							   <p class="hidden-lg hidden-md">Profile</p>
-	 						   </a>
+	 						    </a>
+	 						    <ul class="dropdown-menu">
+									<li><a href="user-profile.html"><i class="material-icons drop-links">face</i> <span>My Profile</span></a></li>
+									<li><a href="login-page.html"><i class="material-icons drop-links">power_settings_new</i> <span>Logout</span></a></li>
+								</ul>
 							</li>
 						</ul>
 
-						<form class="navbar-form navbar-right" role="search">
-							<div class="form-group  is-empty">
-	                        	<input type="text" class="form-control" placeholder="Search">
-	                        	<span class="material-input"></span>
-							</div>
-							<button type="submit" class="btn btn-white btn-round btn-just-icon">
-								<i class="material-icons">search</i><div class="ripple-container"></div>
-							</button>
-	                    </form>
 					</div>
 				</div>
 			</nav>
@@ -155,53 +139,66 @@
 	                    <div class="col-md-12">
 	                        <div class="card">
 	                            <div class="card-header" data-background-color="purple">
-	                                <h4 class="title">Simple Table</h4>
-	                                <p class="category">Here is a subtitle for this table</p>
+	                                <h4 class="title">Current Active Feedbacks</h4>
+	                                <p class="category">Here is a list for current active feedbacks</p>
 	                            </div>
 	                            <div class="card-content table-responsive">
 	                                <table class="table">
 	                                    <thead class="text-primary">
 	                                    	<th>Name</th>
-	                                    	<th>Country</th>
-	                                    	<th>City</th>
-											<th>Salary</th>
+	                                    	<th>Feedbacks Received</th>
+	                                    	<th>Created On</th>
+											<th>Actions</th>
 	                                    </thead>
 	                                    <tbody>
 	                                        <tr>
-	                                        	<td>Dakota Rice</td>
-	                                        	<td>Niger</td>
-	                                        	<td>Oud-Turnhout</td>
-												<td class="text-primary">$36,738</td>
+	                                        	<td>Amazon Gift Card</td>
+	                                        	<td>150</td>
+	                                        	<td>12-Dec-2016</td>
+												<td>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-info" data-toggle="modal" data-target="#myModal"><i class="material-icons">search</i></a>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-danger"><i class="material-icons">delete_forever</i></a>
+												</td>
 	                                        </tr>
+
 	                                        <tr>
-	                                        	<td>Minerva Hooper</td>
-	                                        	<td>Curaçao</td>
-	                                        	<td>Sinaai-Waas</td>
-												<td class="text-primary">$23,789</td>
+	                                        	<td>Flipcart Electronics</td>
+	                                        	<td>255</td>
+	                                        	<td>19-Nov-2015</td>
+												<td>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-info" data-toggle="modal" data-target="#myModal"><i class="material-icons">search</i></a>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-danger"><i class="material-icons">delete_forever</i></a>
+												</td>
 	                                        </tr>
+
 	                                        <tr>
-	                                        	<td>Sage Rodriguez</td>
-	                                        	<td>Netherlands</td>
-	                                        	<td>Baileux</td>
-												<td class="text-primary">$56,142</td>
+	                                        	<td>Ebay Refurbished Goods</td>
+	                                        	<td>145</td>
+	                                        	<td>05-Jan-2017</td>
+												<td>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-info" data-toggle="modal" data-target="#myModal"><i class="material-icons">search</i></a>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-danger"><i class="material-icons">delete_forever</i></a>
+												</td>
 	                                        </tr>
+
 	                                        <tr>
-	                                        	<td>Philip Chaney</td>
-	                                        	<td>Korea, South</td>
-	                                        	<td>Overland Park</td>
-												<td class="text-primary">$38,735</td>
+	                                        	<td>Snapdeal Service</td>
+	                                        	<td>52</td>
+	                                        	<td>10-Sep-2016</td>
+												<td>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-info" data-toggle="modal" data-target="#myModal"><i class="material-icons">search</i></a>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-danger"><i class="material-icons">delete_forever</i></a>
+												</td>
 	                                        </tr>
+
 	                                        <tr>
-	                                        	<td>Doris Greene</td>
-	                                        	<td>Malawi</td>
-	                                        	<td>Feldkirchen in Kärnten</td>
-												<td class="text-primary">$63,542</td>
-	                                        </tr>
-	                                        <tr>
-	                                        	<td>Mason Porter</td>
-	                                        	<td>Chile</td>
-	                                        	<td>Gloucester</td>
-												<td class="text-primary">$78,615</td>
+	                                        	<td>Apple Products</td>
+	                                        	<td>958</td>
+	                                        	<td>11-May-2017</td>
+												<td>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-info" data-toggle="modal" data-target="#myModal"><i class="material-icons">search</i></a>
+													<a href="#" class="btn btn-fab btn-fab-mini btn-danger"><i class="material-icons">delete_forever</i></a>
+												</td>
 	                                        </tr>
 	                                    </tbody>
 	                                </table>
@@ -210,7 +207,9 @@
 	                        </div>
 	                    </div>
 
-	                    <div class="col-md-12">
+	                    
+
+	                    <!-- <div class="col-md-12">
 	                        <div class="card card-plain">
 	                            <div class="card-header" data-background-color="purple">
 	                                <h4 class="title">Table on Plain Background</h4>
@@ -272,10 +271,12 @@
 	                                </table>
 	                            </div>
 	                        </div>
-	                    </div>
+	                    </div> -->
 	                </div>
 	            </div>
 	        </div>
+
+
 
 	        <footer class="footer">
 	            <div class="container-fluid">
@@ -304,7 +305,7 @@
 	                    </ul>
 	                </nav>
 	                <p class="copyright pull-right">
-	                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+	                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Office Beacon
 	                </p>
 	            </div>
 	        </footer>

@@ -37,11 +37,19 @@ $(document).ready(function(){
 		      required: true,
 		      minlength: 3
 		    },
+            username: {
+              required: true,
+              minlength: 3
+            },
 		    email: {
 		      required: true,
 		      minlength: 3,
 		    },
             password: {
+                required: true,
+                minlength: 3,
+            },
+            current_password: {
                 required: true,
                 minlength: 3,
             },
