@@ -470,12 +470,12 @@ h2.title {
 .off-canvas-sidebar .nav li > a {
   margin: 10px 15px;
   border-radius: 3px;
-  color: #3C4858;
+  color: #fff;
 }
 .sidebar .nav li:hover > a,
 .off-canvas-sidebar .nav li:hover > a {
   background: rgba(200, 200, 200, 0.2);
-  color: #3C4858;
+  color: #fff;
 }
 .sidebar .nav li.active > a,
 .off-canvas-sidebar .nav li.active > a {
@@ -521,8 +521,8 @@ h2.title {
   height: 100%;
   content: "";
   display: block;
-  background: #FFFFFF;
-  opacity: .93;
+  background: #000;
+  opacity: .77;
 }
 .sidebar .logo,
 .off-canvas-sidebar .logo {
@@ -555,7 +555,7 @@ h2.title {
   padding: 5px 0px;
   display: block;
   font-size: 18px;
-  color: #3C4858;
+  color: #FFF;
   text-align: center;
   font-weight: 400;
   line-height: 30px;
