@@ -78,7 +78,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Profile</a>
+						<a class="navbar-brand" href="#">My Profile</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -245,7 +245,7 @@
 													</span>
 													<div class="form-group label-floating">
 			                                          <label class="control-label">First Name <small>(required)</small></label>
-			                                          <input name="firstname" type="text" class="form-control">
+			                                          <input name="firstname" type="text" class="form-control" value="Faizan">
 			                                        </div>
 												</div>
 
@@ -255,7 +255,7 @@
 													</span>
 													<div class="form-group label-floating">
 													  <label class="control-label">Last Name <small>(required)</small></label>
-													  <input name="lastname" type="text" class="form-control">
+													  <input name="lastname" type="text" class="form-control" value="Saiyed">
 													</div>
 												</div>
 
@@ -265,7 +265,7 @@
 													</span>
 													<div class="form-group label-floating">
 													  <label class="control-label">Username <small>(required)</small></label>
-													  <input name="username" type="text" class="form-control">
+													  <input name="username" type="text" class="form-control" value="fzs1994">
 													</div>
 												</div>
 		                                	</div>
@@ -276,12 +276,12 @@
 													</span>
 													<div class="form-group label-floating">
 			                                            <label class="control-label">Email <small>(required)</small></label>
-			                                            <input name="email" type="email" class="form-control">
+			                                            <input name="email" type="email" class="form-control" value="fsaiyed@officebrain.com" disabled>
 			                                        </div>
 												</div>
 		                                	</div>
 
-		                                	<div class="col-sm-10 col-sm-offset-1">
+		                                	<!-- <div class="col-sm-10 col-sm-offset-1">
 												<div class="input-group">
 													<span class="input-group-addon">
 														<i class="material-icons">lock_open</i>
@@ -315,7 +315,7 @@
 			                                            <input id="cpassword" name="cpassword" type="password" class="form-control">
 			                                        </div>
 												</div>
-		                                	</div>
+		                                	</div> -->
 		                            	</div>
 		                            </div>
 		                            <div class="tab-pane" id="account">
@@ -365,7 +365,7 @@
 													</span>
 													<div class="form-group label-floating">
 			                                          <label class="control-label">Company</label>
-			                                          <input class="form-control" name="company" type="text"/>
+			                                          <input class="form-control" name="company" type="text" value="Office Beacon" />
 			                                        </div>
 												</div>
 		                                	</div>		
@@ -380,31 +380,31 @@
 		                                    <div class="col-sm-5 col-sm-offset-1">
 	                                        	<div class="form-group label-floating">
 	                                        		<label class="control-label">Address Line 1</label>
-	                                    			<input type="text" name="add1" class="form-control">
+	                                    			<input type="text" name="add1" class="form-control" value="Opp. Raneswar Temple">
 	                                        	</div>
 		                                    </div>
 		                                    <div class="col-sm-5">
 		                                        <div class="form-group label-floating">
 		                                            <label class="control-label">Address Line 2</label>
-		                                            <input type="text" name="add2" class="form-control">
+		                                            <input type="text" name="add2" class="form-control" value="Vasana Road">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-5 col-sm-offset-1">
 		                                        <div class="form-group label-floating">
 		                                            <label class="control-label">State</label>
-		                                            <input type="text" name="state" class="form-control">
+		                                            <input type="text" name="state" class="form-control" value="Gujarat">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-5">
 		                                        <div class="form-group label-floating">
 		                                            <label class="control-label">City</label>
-		                                            <input type="text" name="city" class="form-control">
+		                                            <input type="text" name="city" class="form-control" value="Vadodara">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-5 col-sm-offset-1">
 		                                        <div class="form-group label-floating">
 		                                            <label class="control-label">Zip Code</label>
-		                                            <input type="text" name="zipcode" class="form-control">
+		                                            <input type="text" name="zipcode" class="form-control" value="390020">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-5">
@@ -513,7 +513,7 @@
 														<option value="HK">Hong Kong</option>
 														<option value="HU">Hungary</option>
 														<option value="IS">Iceland</option>
-														<option value="IN">India</option>
+														<option value="IN" selected>India</option>
 														<option value="ID">Indonesia</option>
 														<option value="IR">Iran, Islamic Republic of</option>
 														<option value="IQ">Iraq</option>
@@ -684,21 +684,84 @@
 						<div class="col-md-4">
     						<div class="card card-profile">
     							<div class="card-avatar">
-    								<a href="#pablo">
+    								<a href="#">
     									<img class="img" src="assets/img/faces/marc.jpg" />
     								</a>
     							</div>
 
     							<div class="content">
-    								<h6 class="category text-gray">CEO / Co-Founder</h6>
+    								<h6 class="category text-gray">Office Beacon</h6>
     								<h4 class="card-title">Alec Thompson</h4>
+    								<p class="text-gray"><i>john@doe.com / john123</i></p>
     								<p class="card-content">
-    									Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+    									<table class="table table-striped table-hover">
+    										<tbody align="left">
+    											<tr><td align="right"><strong>Date Of Birth:</strong></td><td>19-Sep-1994</td></tr>
+    											<tr><td align="right"><strong>Gender:</strong></td><td>Male</td></tr>
+    											<tr><td align="right"><strong>Address:</strong></td><td>Address Line 1, Address Line 2</td></tr>
+    											<tr><td align="right"><strong>City:</strong></td><td>Vadodara</td></tr>
+    											<tr><td align="right"><strong>State:</strong></td><td>Gujarat</td></tr>
+    											<tr><td align="right"><strong>Pin Code:</strong></td><td>390012</td></tr>
+    											<tr><td align="right"><strong>Country:</strong></td><td>India</td></tr>
+    										</tbody>
+    									</table>
     								</p>
-    								<a href="#pablo" class="btn btn-primary btn-round">Follow</a>
+    								<!-- <a href="#pablo" class="btn btn-primary btn-round">Follow</a> -->
     							</div>
     						</div>
 		    			</div>
+	                </div>
+
+	                <div class="row">
+	                	<div class="col-lg-8 col-md-12">
+							<div class="card">
+	                            <div class="card-header" data-background-color="purple">
+	                                <h4 class="title">Change Password</h4>
+	                                <p class="category">Change your old password with new.</p>
+	                            </div>
+	                            <div class="card-content table-responsive">
+	                                <form>
+	                                	<div class="col-sm-12" style="padding-left: 6px">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="material-icons">lock_open</i>
+												</span>
+												<div class="form-group label-floating">
+		                                            <label class="control-label">Current Password <small>(required)</small></label>
+		                                            <input id="password" name="current_password" type="password" class="form-control">
+		                                        </div>
+											</div>
+	                                	</div>
+
+	                                	<div class="col-sm-12">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="material-icons">lock_open</i>
+												</span>
+												<div class="form-group label-floating">
+		                                            <label class="control-label">New Password <small>(required)</small></label>
+		                                            <input id="password" name="password" type="password" class="form-control">
+		                                        </div>
+											</div>
+	                                	</div>
+
+	                                	<div class="col-sm-12">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="material-icons">lock_outline</i>
+												</span>
+												<div class="form-group label-floating">
+		                                            <label class="control-label">Confirm New Password <small>(must match)</small></label>
+		                                            <input id="cpassword" name="cpassword" type="password" class="form-control">
+		                                        </div>
+											</div>
+	                                	</div>
+
+	                                	<button type="submit" class="btn btn-primary pull-right">Submit</button>
+	                                </form>
+	                            </div>
+	                        </div>
+						</div>
 	                </div>
 	            </div>
 	        </div>
